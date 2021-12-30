@@ -6,8 +6,10 @@
 #$ KEYWORDS: HappyModel, Moblite, bnf
 #$ AUTHOR: antony-weber
 #$ DESCRIPTION: Basic settings for a HappyModel Moblite 6 quadcopter
+#$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/136
 
-
+defaults
 
 # remap motors
 # resources
