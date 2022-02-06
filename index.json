@@ -299,7 +299,7 @@
   "presets": [
     {
       "fullPath": "presets/4.3/bnf/moblite_6.txt",
-      "hash": "5fd6113ec985d3a7151e0acc704c2ce1bdcb6087b6ed89c57c108ba9f799c759",
+      "hash": "2d5bf127e274d49632c6d322179d4c62da2b907ec395319c8e7ab41748fdae83",
       "options": [
         {
           "name": "Reversed motors",
@@ -310,31 +310,35 @@
           "checked": false
         },
         {
-          "name": "Extended VTX power levels",
-          "checked": false
-        },
-        {
-          "name": "VTX low band",
-          "checked": false
-        },
-        {
-          "name": "RC protocol REDPINE",
-          "checked": false
-        },
-        {
           "name": "SPI FrSky D8",
-          "checked": false
+          "checked": true
         },
         {
           "name": "SPI FrSky D16",
           "checked": false
         },
         {
-          "name": "External CRSF receiver",
+          "name": "REDPINE",
           "checked": false
         },
         {
-          "name": "CPU owerclock 120MHz",
+          "name": "CRSF",
+          "checked": false
+        },
+        {
+          "name": "OFF",
+          "checked": true
+        },
+        {
+          "name": "108MHz",
+          "checked": false
+        },
+        {
+          "name": "120MHz",
+          "checked": false
+        },
+        {
+          "name": "Race settings (EXPERIMENTAL)",
           "checked": false
         }
       ],
@@ -357,7 +361,10 @@
       "include_disclaimer": [
         "misc/disclaimer/en/vtxtable.txt"
       ],
-      "discussion": "https://github.com/betaflight/firmware-presets/pull/136"
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/136",
+      "include": [
+        "presets/4.3/vtx/Happymodel_built_in_vtx.txt"
+      ]
     },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
@@ -3007,6 +3014,40 @@
       "include_disclaimer": [
         "misc/disclaimer/en/vtxtable.txt"
       ]
+    },
+    {
+      "fullPath": "presets/4.3/vtx/Happymodel_built_in_vtx.txt",
+      "hash": "3a6161454bd2cfd28043f7b78d713dd95607813d57d928d9bb34930da34a2139",
+      "options": [
+        {
+          "name": "Extended VTX power levels",
+          "checked": false
+        },
+        {
+          "name": "VTX low band",
+          "checked": false
+        }
+      ],
+      "title": "HappyModel built in vtx table",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "HappyModel",
+        "vtx",
+        "vtx table"
+      ],
+      "author": "antony-weber",
+      "description": [
+        "VTX table for happymodel built in vtx"
+      ],
+      "include_disclaimer": [
+        "misc/disclaimer/en/vtxtable.txt"
+      ],
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/136"
     },
     {
       "fullPath": "presets/4.3/vtx/Unify_EVO_5G8_HV_SA.txt",
