@@ -8,7 +8,6 @@
 #$ DESCRIPTION: Basic settings for a HappyModel Moblite 6 quadcopter
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/136
-#$ INCLUDE: presets/4.3/vtx/Happymodel_built_in_vtx.txt
 
 defaults 
 
@@ -108,3 +107,6 @@ set vbat_sag_compensation = 100
 set thrust_linear = 25
 set yaw_lowpass_hz = 0
 #$ OPTION END
+
+#$ INCLUDE: presets/4.3/vtx/Happymodel_built_in_vtx.txt
+
