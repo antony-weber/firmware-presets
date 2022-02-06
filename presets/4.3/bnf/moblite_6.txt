@@ -1,5 +1,4 @@
 #$ TITLE: HappyModel Moblite 6 settings
-#$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
@@ -49,6 +48,8 @@ set small_angle = 180
 set align_board_yaw = 180
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
+
+#$ INCLUDE: presets/4.3/vtx/Happymodel_built_in_vtx.txt
 
 #$ OPTION BEGIN (UNCHECKED): Reversed motors
 set yaw_motors_reversed = ON
@@ -108,5 +109,13 @@ set thrust_linear = 25
 set yaw_lowpass_hz = 0
 #$ OPTION END
 
-#$ INCLUDE: presets/4.3/vtx/Happymodel_built_in_vtx.txt
+#$ OPTION BEGIN (UNCHECKED): Extended VTX power levels
+vtxtable powerlevels 3
+vtxtable powervalues 0 1 2
+vtxtable powerlabels 25 100 200
+#$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): VTX low band
+vtxtable bands 6
+vtxtable band 6 LOW      L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+#$ OPTION END

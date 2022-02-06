@@ -377,10 +377,9 @@
   "presets": [
     {
       "fullPath": "presets/4.3/bnf/moblite_6.txt",
-      "hash": "2d5bf127e274d49632c6d322179d4c62da2b907ec395319c8e7ab41748fdae83",
+      "hash": "d696338daece70d638bd5f45f533253a0f483249615915d0ac4db60cb5102723",
       "title": "HappyModel Moblite 6 settings",
       "firmware_version": [
-        "4.2",
         "4.3"
       ],
       "category": "BNF",
